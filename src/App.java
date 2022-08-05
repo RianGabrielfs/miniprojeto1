@@ -24,7 +24,7 @@ public class App {
 
         if (escolha.equals(escolha1Capitulo1)) {
             // capitulo 2
-            String nomeCapitulo2 = "O fim do sono sombrio";
+            String nomeCapitulo2 = "apenas o fim.";
             String textoCapitulo2 = "Ao escolher a pilula roxa Jof acordou na sua cama sem entender nada." +
                     "\n" + "Logo quando percebeu que era apenas um sonho respirou fundo e ficou calmo." +
                     "\n"
@@ -40,7 +40,7 @@ public class App {
 
         else if (escolha.equals(escolha2Capitulo1)) {
 
-            String nomeCapitulo3 = "O final do sonho.";
+            String nomeCapitulo3 = "O final do sonho sombrio.";
             String textoCapitulo3 = "Jof caminhava por uma floresta, quando de repente avistou uma entrada, era uma caverna."
                     +
                     "\n"
