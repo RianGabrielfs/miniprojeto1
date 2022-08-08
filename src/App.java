@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
 
-        // System.out.println("A CAVERNA DESCONHECIDA");
+        System.out.println("A CAVERNA DESCONHECIDA");
 
-        // PersonagemMini2 jof = new PersonagemMini2("jof", 100);
-        // PersonagemMini2 vett = new PersonagemMini2("vett", 100);
+        PersonagemMini2 jof = new PersonagemMini2("jof", 100);
+        PersonagemMini2 vett = new PersonagemMini2("vett", 100);
 
         // capitulo 1
         String nomeCapitulo1 = " O sonho sombrio";
@@ -41,6 +41,7 @@ public class App {
             System.out.println(nomeCapitulo2);
             System.out.println("- - - - - - - - ");
             System.out.print(textoCapitulo2);
+
         }
 
         else if (escolha.equals(escolha2Capitulo1)) {
@@ -63,11 +64,13 @@ public class App {
             String escolha1Capitulo3 = "primeira opcao";
             String escolha2Capitulo3 = "segunda opcao";
 
+            System.out.println("\n- - - - - - -\n");
             System.out.println(nomeCapitulo3);
             System.out.println("\n. . . . . .\n");
             System.out.println(textoCapitulo3);
             System.out.println(" - " + escolha1Capitulo3);
             System.out.println(" - " + escolha2Capitulo3);
+            jof.alteracaoEnergia(-20);
 
             Scanner escaneadorr = new Scanner(System.in);
             escolha = escaneadorr.nextLine();
@@ -88,6 +91,7 @@ public class App {
                 System.out.println(nomeCapitulo4);
                 System.out.println("\n. . . . . .\n");
                 System.out.println(textoCapitulo4);
+                jof.alteracaoEnergia(+20);
             }
 
             else if (escolha.equals(escolha2Capitulo3)) {
@@ -97,12 +101,14 @@ public class App {
                         + "\n" +
                         " se esconder direito e alguns morcegos vão em sua direção, dois morcegam mordem jof no braço esquerdo e no pescoço, logo jof cai, e teve um fim tragico."
                         +
-                        "Logo após o final do sonho jof acorda e vê que tudo está normal. " +
+                        "Logo após o final do sonho jof acorda e vê que tudo está normal e realmente não passava de um sonho. "
+                        +
                         "Fim.";
 
                 System.out.println(nomeCapitulo5);
                 System.out.println("\n. . . . . .\n");
                 System.out.println(textoCapitulo5);
+                jof.alteracaoEnergia(-100);
 
             }
 
