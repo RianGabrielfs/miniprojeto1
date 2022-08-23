@@ -67,7 +67,7 @@ public class App {
 
             if (escolha.equals(escolha1Capitulo3)) {
                 // capitulo 4
-                String nomeCapitulo4 = "A QUEDA DE JOFF.";
+                String nomeCapitulo4 = "A QUEDA DE JOFF E O FIM.";
                 String textoCapitulo4 = "Jof escolhe sair de fininho da caverna, ele percorre um caminho com pedras soltas e molhadas, "
                         +
                         "a caverna está um pouco escura, mas jof tem ajuda de vett que está ilumindando o caminho, a escolha de jof está dando certo, ele está conseguindo sair devagar e em silencio da caverna, "
