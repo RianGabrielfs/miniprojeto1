@@ -9,28 +9,18 @@ public class App {
         PersonagemMini2 vett = new PersonagemMini2("vett", 100);
 
         // capitulo 1
-        String nomeCapitulo1 = " O sonho sombrio";
-        String textoCapitulo1 = " Olá Jof sou o Vett, você está dentro de um sonho sombrio. Você deseja acordar desse sonho? "
-                +
-                " Para acordar basta tomar a pilula roxa e você voltará a realidade." +
-                " Para continuar no sonho e ver onde isso vai dar, tome a pilula vermelha.";
-
-        String escolha1Capitulo1 = "roxa";
-        String escolha2Capitulo1 = "vermelha";
-
-        System.out.println("\n. . .\n");
-        System.out.println(nomeCapitulo1);
-        System.out.println("- - - - - - - - -");
-        System.out.println(textoCapitulo1);
-        System.out.println(" - " + escolha1Capitulo1);
-        System.out.println(" - " + escolha2Capitulo1);
+        capitulo capitulo1 = new capitulo("O sonho sombrio", "Olá Jof sou o Vett, você está dentro de um sonho sombrio. Você deseja acordar desse sonho?", 
+        "roxa",
+        "vermelha", vett, 
+        0);
+       
 
         Scanner escaneador = new Scanner(System.in);
         String escolha = escaneador.nextLine();
 
-        if (escolha.equals(escolha1Capitulo1)) {
+        if (escolha.equals(escolha)) {
             // capitulo 2
-            String nomeCapitulo2 = " O fim do pesadelo.";
+            String nomeCapitulo2 = " O fim.";
             String textoCapitulo2 = " Ao escolher a pilula roxa Jof acordou na sua cama sem entender nada." +
                     " Logo quando percebeu que era apenas um sonho respirou fundo e ficou calmo." +
                     " Após isso se levantou e foi fazer suas taferas do dia totalmente tranquilo após acordar e perceber que tudo não passava apenas de um sonho!"
@@ -44,7 +34,7 @@ public class App {
 
         }
 
-        else if (escolha.equals(escolha2Capitulo1)) {
+        else if (escolha.equals(escolha)) {
             // capitulo 3
             String nomeCapitulo3 = "O FINAL DO SONHO SOMBRIO";
             String textoCapitulo3 = "Jof caminhava por uma floresta, quando de repente avistou uma entrada, era uma caverna."
