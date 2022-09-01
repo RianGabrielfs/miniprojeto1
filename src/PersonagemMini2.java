@@ -31,8 +31,8 @@ public class PersonagemMini2 {
         } else if (this.energia < 0) {
 
             this.energia = 0;
-            System.out.println("Sua energia se esgosta. " +
-                    this.nome + "E ele acorda.");
+            System.out.println("Sua energia se esgosta, então " +
+                    this.nome + " se acorda.");
 
         }
     }
